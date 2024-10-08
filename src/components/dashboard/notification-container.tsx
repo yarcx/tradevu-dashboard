@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 
 const NotificationItem = ({ msg, active, date }: INotify) => {
   return (
-    <div className="flex items-start justify-between border-b py-2">
-      <div className="flex items-center h-full ml-3 ">
+    <div className="flex items-start justify-between border-b py-2 gap-x-2">
+      <div className="flex items-center h-full ml-1 md:ml-3">
         {active && <div className="bg-textColor-2 h-2 w-2 rounded-full mt-2"></div>}
       </div>
       <div className="flex flex-col items-start  w-11/12">
@@ -32,7 +32,7 @@ const NotificationItem = ({ msg, active, date }: INotify) => {
 const NotificationContainer = () => {
   const [status, setStatus] = useState(false);
   return (
-    <DropdownMenuContent className="w-[280px] md:w-[360px] p-0 border-[#F4F0FF]">
+    <DropdownMenuContent className="w-[300px] md:w-[360px] p-0 border-[#F4F0FF]">
       <div className="border-b flex items-center justify-between p-2 mb-3">
         <h4>Notifications</h4>
         <div className="flex items-center gap-x-2">
