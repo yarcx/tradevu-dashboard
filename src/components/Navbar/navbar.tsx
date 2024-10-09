@@ -72,7 +72,9 @@ const Navbar = () => {
         <div className="flex items-center justify-center gap-x-3 md:gap-x-2 lg:gap-x-5">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <ActiveNotificationIcon />
+              <span className="cursor-pointer">
+                <ActiveNotificationIcon />
+              </span>
             </DropdownMenuTrigger>
             <NotificationContainer />
           </DropdownMenu>
